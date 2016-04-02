@@ -14,10 +14,12 @@ import glob
 import classify
 import base64
 import requests
+import os
 import numpy as np
 
 ALLOWED_EXTENSIONS = set(['png', 'jpg', 'jpeg'])
-COMPARISONS_DIR = "comparisons"
+CURRENT_DIR = os.path.dirname(os.path.abspath(__file__))
+COMPARISONS_DIR = os.path.join(CURRENT_DIR, "comparisons")
 
 
 def allowed_file(filename):
