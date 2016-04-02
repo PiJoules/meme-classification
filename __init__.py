@@ -77,7 +77,7 @@ def index():
             else:
                 return render_template("index.html", meme=None, b64=None)
 
-            meme = "I classify this meme as: " + best_meme(img)
+            meme = "I classify this meme as: " + best_meme(img).upper()
             b64 = img_to_base64(img)
             return render_template("index.html", meme=meme, b64=b64)
         except Exception as e:

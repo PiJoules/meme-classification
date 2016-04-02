@@ -25,12 +25,12 @@
                   <span class="icon-bar"></span>
                   <span class="icon-bar"></span>
               </button>
-              <a class="navbar-brand" href="/">Low Poly</a>
+              <a class="navbar-brand" href="/">Meme Classifier</a>
           </div>
 
           <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
               <ul class="nav navbar-nav">
-                  <li><a href="https://github.com/PiJoules/lowpoly">Source</a></li>
+                  <li><a href="https://github.com/PiJoules/meme-classification">Source</a></li>
                   <li><a href="https://github.com/PiJoules">Pi Joules</a></li>
                   <li><a href="http://3341b.com/">3341b</a></li>
               </ul>
@@ -38,9 +38,10 @@
       </div>
     </nav>
     <div class="container">
-      <h1>Low Poly Mesh Converter</h1>
+      <h1>Meme Classifier</h1>
       <blockquote>
-        <p>Create low poly meshes of images. Just provide either the URL to the image or upload an image to polygonize. Note that larger, hi-res images will take longer to process.</p>
+        <p>Classify memes using a euclidean distance classifier (bad luck brian, chemistry cat, <i>pepe (TODO: Include rarity)</i>). Just provide either the URL to the image or upload an image to classify. Note that larger, hi-res images will take longer to process.</p>
+        <p>Allowed image types: png, jpg, jpeg</p>
       </blockquote>
 
       <p>
@@ -66,7 +67,7 @@
 
       <div class="row">
         <div class="col-xs-12">
-          <img id="lowpoly" src="{% if b64 is not none %}data:image/png;base64,{{ b64 }}{% endif %}"/>
+          <img id="sample-img" src="{% if b64 is not none %}data:image/png;base64,{{ b64 }}{% endif %}"/>
         </div>
       </div>
     </div>
