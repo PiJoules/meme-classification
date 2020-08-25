@@ -3,5 +3,5 @@
 # Run 'pip install -r requirements.txt -t lib/' to install these dependencies
 # in `lib/` subdirectory.
 
-Flask==0.10
+Flask==1.0
 requests==2.5.3
